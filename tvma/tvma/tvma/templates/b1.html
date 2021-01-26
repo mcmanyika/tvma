@@ -1,0 +1,336 @@
+{% load cms_tags menu_tags sekizai_tags static %}
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!--===============================================================>
+
+        Theme Name: Trax
+        Theme URI:
+        Author: Themes Industry
+        Author URI:
+        Description: One Page , Multi Parallax Template
+        Tags: one page, multi page, multipurpose, parallax, creative, html5
+
+    <=================================================================-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TVMA</title>
+    <link href="images/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tooltipster.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cubeportfolio.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/settings.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+    .overlay-dark {
+        background-color: #00000094;
+        }
+        .padding_top {
+            padding-top: 1.5rem;
+        }
+        #our-process, #about  {
+                padding: 3.5rem 0;
+        }
+        #blog{
+                padding: 0;
+        }
+        p {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 1.7;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% render_block "css" %}
+</head>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="75" class="offset-nav">
+{% cms_toolbar %}
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="cssload-loader"></div>
+    </div>
+</div>
+<!--PreLoader Ends-->
+<!-- header -->
+<header class="site-header" id="header">
+    <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'img/logo.png' %}" alt="logo" class="logo-default">
+                <img src="{% static 'img/logosmall.png' %}"  alt="logo" class="logo-scrolled">
+           
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto ml-xl-auto mr-xl-0">
+                    {% show_menu 0 100 100 100 %}
+                </ul>
+            </div>
+        </div>
+        <!--side menu open button-->
+        <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+            <span></span> <span></span> <span></span>
+        </a>
+    </nav>
+    <!-- side menu -->
+    <div class="side-menu opacity-0 gradient-bg">
+        <div class="overlay"></div>
+        <div class="inner-wrapper">
+            <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav">
+                    {% show_menu 0 100 100 100 %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="close_side_menu" class="tooltip"></div>
+    <!-- End side menu -->
+</header>
+<!-- header -->
+<!--Main Slider-->
+<section id="home" class="position-relative">
+    <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container m-0 p-0 bg-dark" data-alias="classic4export" data-source="gallery">
+        <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+        <div id="rev_main" class="rev_slider fullwidthabanner white" data-version="5.4.1">
+            {% block content %}{% endblock content %}
+            <ul>
+                <!-- SLIDE 1 -->
+                <li data-index="rs-01" data-transition="fade" data-slotamount="default" data-easein="Power100.easeIn" data-easeout="Power100.easeOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="01">
+                    <!-- MAIN IMAGE -->
+                    <img src="{% static 'img/celebration.jpg' %}" width="100%"  alt="" >
+                    <div class="overlay overlay-dark opacity-6"></div>
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-130','-130','-110','-80']"
+                         data-width="none" data-height="none" data-type="text"
+                         data-textAlign="['center','center','center','center']"
+                         data-responsive_offset="on" data-start="1000"
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">The Ultimate</h1>
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-50','-20']"
+                         data-width="none" data-height="none" data-type="text"
+                         data-textAlign="['center','center','center','center']"
+                         data-responsive_offset="on" data-start="1000"
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-bold whitecolor text-center">Creative Business</h1>
+                    </div>
+                </li>
+                <!-- SLIDE 2 -->
+                <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="02">
+                    <!-- MAIN IMAGE -->
+                    <img src="{% static 'img/celebration.jpg' %}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <div class="overlay overlay-dark opacity-6"></div>
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-130','-130','-110','-80']"
+                         data-width="none" data-height="none" data-type="text"
+                         data-textAlign="['center','center','center','center']"
+                         data-responsive_offset="on" data-start="1000"
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">Let's Create</h1>
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-50','-20']"
+                         data-width="none" data-height="none" data-type="text"
+                         data-textAlign="['center','center','center','center']"
+                         data-responsive_offset="on" data-start="1000"
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-bold whitecolor text-center">Deep Creativity</h1>
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','10','40']"
+                         data-width="none" data-height="none" data-type="text"
+                         data-textAlign="['center','center','center','center']"
+                         data-responsive_offset="on" data-start="1500"
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">In Market</h1>
+                    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['40','40','60','90']"
+                         data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                         data-textAlign="['center','center','center','center']"
+                         data-responsive_offset="on" data-start="2000"
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h4 class="whitecolor font-xlight text-center">Responsive and Retina Ready for All Devices</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="social-icons-simple revicon white">
+    <li class="d-table"><a href="javascript:void(0)" class="facebook"><i class="fa fa-facebook-f" style="font-size:20px"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)" class="twitter"><i class="fa fa-twitter" style="font-size:20px"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)" class="linkedin"><i class="fa fa-linkedin-in" style="font-size:20px"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)" class="insta"><i class="fa fa-instagram" style="font-size:20px"></i> </a> </li>
+    </ul>
+</section>
+<!--Main Slider ends -->
+<!--Some Services-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="services-slider" class="owl-carousel">
+                <div class="item">
+                    <div class="service-box">
+                        {% placeholder 'vision' %}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-box">
+                        {% placeholder 'mission' %}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-box">
+                        {% placeholder 'beliefs' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Some Services ends-->
+<!--Some Feature -->
+<section id="about" class="single-feature padding mt-n5">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+                {% placeholder 'welcome' %} 
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
+                <div class="image">{% placeholder 'seo' %}</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Some Feature ends-->
+<!-- WOrk Process-->
+<section id="our-process" class="padding bgdark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                    {% placeholder 'quote' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--WOrk Process ends-->
+<!--Blog-->
+<section class="bglight padding" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                 {% placeholder 'apostle' %}
+                 </div>
+            </div>    
+            <div class="col-lg-6">
+                <div class="wow fadeInUp" data-wow-delay="300ms">
+                    {% placeholder 'about' %}
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+<!--Blog ends-->
+<!--contact us-->
+<section id="contact" class="position-relative padding_bottom_half">
+    <div class="container whitebox padding_bottom_half">
+        <div class="padding_top">
+            <div class="row">
+                <div class="col-md-12 text-center wow fadeInUp mt-n3" data-wow-delay="300ms">
+                    <div class="heading-title bottom25 darkcolor">
+                        {% placeholder 'contactHeader' %}
+                    </div>
+                </div>
+                <div class="col-md-12">
+                {% placeholder 'contact' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact us end-->
+<!--Site Footer Here-->
+<footer id="site-footer" class=" bgdark padding_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_panel text-center bottom20">
+                    <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+                        <li><a href="javascript:void(0)" class="facebook"><i class="fa fa-facebook-f"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="twitter"><i class="fa fa-twitter"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="linkedin"><i class="fa fa-linkedin-in"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="insta"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                    {% placeholder 'footer' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% comment %} <a href="javascript:void(0)" class="button gradient-btn mb-sm-0 mb-4">Learn More</a> {% endcomment %}
+<!--Footer ends-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<!--Bootstrap Core-->
+<script src="{% static 'js/propper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!--to view items on reach-->
+<script src="{% static 'js/jquery.appear.js' %}"></script>
+<!--Owl Slider-->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<!--number counters-->
+<script src="{% static 'js/jquery-countTo.js' %}"></script>
+<!--Parallax Background-->
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<!--Cubefolio Gallery-->
+<script src="{% static 'js/jquery.cubeportfolio.min.js' %}"></script>
+<!--Fancybox js-->
+<script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+<!--Tooltip js-->
+<script src="{% static 'js/tooltipster.min.js' %}"></script>
+<!--wow js-->
+<script src="{% static 'js/wow.js' %}"></script>
+<!--Revolution SLider-->
+<script src="{% static 'js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script src="{% static 'js/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'js/revolution.extension.video.min.js' %}"></script>
+<!--map js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
+<script src="{% static 'js/map.js' %}"></script>
+<!--custom functions and script-->
+<script src="{% static 'js/functions.js' %}"></script>
+{% render_block "js" %}
+</body>
+</html>
