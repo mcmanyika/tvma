@@ -2,7 +2,7 @@ aldryn-apphooks-config==0.6.0
 aldryn-boilerplates
 aldryn-categories
 aldryn-common==1.0.5
-aldryn-forms==4.0.1
+aldryn-forms
 aldryn-newsblog
 aldryn-people
 aldryn-search==1.1.0
