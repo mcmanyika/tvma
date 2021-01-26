@@ -20,9 +20,9 @@ SECRET_KEY = '7t!3b3_cih0k#j+uo=-w2rtr1aya9aqqop_bagn0g_iyfngl$7'
 
 DEBUG = False
 if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1', '159.203.106.51']
+    ALLOWED_HOSTS = ['127.0.0.1', '174.138.60.77']
 else:
-    ALLOWED_HOSTS = ['159.203.106.51']
+    ALLOWED_HOSTS = ['174.138.60.77']
 
 
 # Application definition
