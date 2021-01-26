@@ -180,7 +180,7 @@ INSTALLED_APPS = [
     'djangocms_video',
 
     'absolute',
-    'aldryn_forms',
+    # 'aldryn_forms',
     'aldryn_forms.contrib.email_notifications',
     'captcha',
     'emailit',
