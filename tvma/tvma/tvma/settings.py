@@ -181,7 +181,7 @@ INSTALLED_APPS = [
 
     'absolute',
     # 'aldryn_forms',
-    'aldryn_forms.contrib.email_notifications',
+    # 'aldryn_forms.contrib.email_notifications',
     'captcha',
     'emailit',
 
