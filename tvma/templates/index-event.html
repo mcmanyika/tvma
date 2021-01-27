@@ -53,8 +53,9 @@
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
     {% cms_toolbar %}
     <!--loading start-->
-    <!-- <div class="loader">
+    <div class="loader">
       <div class="inner-loader">
+        <!-- <div class="snow"></div>
         <div class="snow"></div>
         <div class="snow"></div>
         <div class="snow"></div>
@@ -108,18 +109,17 @@
         <div class="snow"></div>
         <div class="snow"></div>
         <div class="snow"></div>
-        <div class="snow"></div>
-        <div class="snow"></div>
+        <div class="snow"></div> -->
         <!--    <img src="event/img/load3.gif">-->
-        <div class="spinner">
+        <!-- <div class="spinner">
           <div class="rect1"></div>
           <div class="rect2"></div>
           <div class="rect3"></div>
           <div class="rect4"></div>
           <div class="rect5"></div>
-        </div>
+        </div> -->
       </div>
-    </div> -->
+    </div>
     <!--loading end-->
 
     <!--bottom Arrow start-->
@@ -356,9 +356,7 @@
           >
             <div class="about-info">
               <span class="fly-line"></span>
-              <p class="text-des">
-                {% placeholder 'mobile' %}
-              </p>
+              <p class="text-des">{% placeholder 'mobile' %}</p>
             </div>
           </div>
 
@@ -367,9 +365,7 @@
           >
             <div class="about-info">
               <span class="fly-line"></span>
-              <p class="text-des">
-                {% placeholder 'about' %}
-              </p>
+              <p class="text-des">{% placeholder 'about' %}</p>
             </div>
           </div>
         </div>
@@ -381,7 +377,7 @@
     <div
       class="count-sec"
       id="count-sec"
-      style="background: url({% static 'img/blank.png' %})"
+      style="background: url({%static'img/blank.png'%})"
     >
       <div class="count-overlay"></div>
       <div class="container">
@@ -395,9 +391,7 @@
             <span class="fly-line"></span>
           </div>
           <div class="col-12 col-lg-4 count-li">
-            <h6 class="num">
-              <span class="counter" data-count="8">8</span>+
-            </h6>
+            <h6 class="num"><span class="counter" data-count="8">8</span>+</h6>
             <h4 class="heading">International Zones</h4>
             <span class="fly-line"></span>
           </div>
@@ -413,7 +407,7 @@
     </div>
     <!--Counters sec end-->
 
-     <!--Speaker sec start-->
+    <!--Speaker sec start-->
     <div class="speaker-sec" id="speaker-sec">
       <div class="container">
         <div class="row text-center speakers-detail">
@@ -426,7 +420,7 @@
           <div class="item speaker-info">
             <div class="">
               {% placeholder 'quote1' %}
-              
+
               <div
                 class="overlay d-flex justify-content-center align-items-center"
               >
@@ -520,18 +514,15 @@
     </div>
     <!--Speaker sec end-->
 
-
     <!--Blog Area-->
     <div
       class="count-sec"
       id="blog-area"
-      style="background: url({% static 'img/background.png' %})"
+      style="background: url({%static'img/background.png'%})"
     >
       <div class="count-overlay"></div>
       <div class="container">
-        <div class="col-lg-12">
-          {% placeholder 'blog' %}       
-        </div>
+        <div class="col-lg-12">{% placeholder 'blog' %}</div>
       </div>
     </div>
     <!--Blog Area-->
@@ -549,7 +540,7 @@
           <div class="item speaker-info">
             <div class="image-holder">
               {% placeholder 'quote1' %}
-              
+
               <div
                 class="overlay d-flex justify-content-center align-items-center"
               >
@@ -649,7 +640,7 @@
     <div
       class="timeline-sec"
       id="timeline-sec"
-      style="background: url({% static 'img/prayer.png' %})"
+      style="background: url({%static'img/prayer.png'%})"
     >
       <div class="timeline-overlay"></div>
       <div class="container">
@@ -669,9 +660,7 @@
             <ul class="timeline">
               <li class="timeline-block simple-timeline wow fadeInLeft">
                 <div class="event-details">
-                  <p class="text-des">
-                    {% placeholder 'event1' %}
-                  </p>  
+                  <p class="text-des">{% placeholder 'event1' %}</p>
                 </div>
               </li>
               <li
@@ -679,18 +668,15 @@
                 data-wow-delay=".2s"
               >
                 <div class="event-details">
-                  <p class="text-des">
-                    {% placeholder 'event2' %}
-                  </p>  
-                </div>              </li>
+                  <p class="text-des">{% placeholder 'event2' %}</p>
+                </div>
+              </li>
               <li
                 class="timeline-block inverse-timeline wow fadeInRight"
                 data-wow-delay=".6s"
               >
                 <div class="event-details">
-                  <p class="text-des">
-                    {% placeholder 'event3' %}
-                  </p>  
+                  <p class="text-des">{% placeholder 'event3' %}</p>
                 </div>
               </li>
               <li
@@ -698,13 +684,10 @@
                 data-wow-delay=".4s"
               >
                 <div class="event-details">
-                  <p class="text-des">
-                    {% placeholder 'event4' %}
-                  </p>  
+                  <p class="text-des">{% placeholder 'event4' %}</p>
                 </div>
               </li>
             </ul>
-            
           </div>
         </div>
       </div>
@@ -715,9 +698,7 @@
     <footer class="footer-sec" id="footer-sec">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            {% placeholder 'footer' %}
-          </div>
+          <div class="col-12">{% placeholder 'footer' %}</div>
 
           <div class="col-12 d-flex justify-content-center">
             <div class="footer-icons d-flex">
