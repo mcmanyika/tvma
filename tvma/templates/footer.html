@@ -1,0 +1,148 @@
+{% load cms_tags i18n menu_tags sekizai_tags static %}    
+    <!--footer sec start-->
+    <footer class="footer-sec" id="footer-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">{% placeholder 'footer' %}</div>
+
+          <div class="col-12 d-flex justify-content-center">
+            <div class="footer-icons d-flex">
+              <a href="javascript:void(0)" class="wow fadeInUp"
+                ><i class="lab la-facebook-f"></i>
+              </a>
+              <a href="javascript:void(0)" class="wow fadeInDown"
+                ><i class="lab la-twitter"></i>
+              </a>
+              <a href="javascript:void(0)" class="wow fadeInUp"
+                ><i class="lab la-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer sec end-->
+
+    <!--modal window contact form start-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Ticket Registeration
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body contact-sec">
+            <div class="contact-box">
+              <div class="c-box wow fadeInRight">
+                <!--                        <h4 class="heading">Ticket Registeration?</h4>-->
+                <!--                        <p class="text-des">Lorem ipsum is simply dummy text of the printing and typesetting industry. </p>-->
+                <form class="contact-form">
+                  <div class="row my-form">
+                    <div class="display-error"><span id="error"></span></div>
+                    <div class="col-12 col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="candidate_fname"
+                        name="candidate_fname"
+                        placeholder="Full Name"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="candidate_email"
+                        name="candidate_email"
+                        placeholder="Email"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="user_no"
+                        name="user_no"
+                        placeholder="Contact No"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <select
+                        class="form-control"
+                        id="ticket_price"
+                        name="ticket_price"
+                        required="required"
+                      >
+                        <option class="form-control" value="">
+                          Select Ticket Price
+                        </option>
+                        <option class="form-control" value="Early Bird - $20">
+                          Early Bird - $20
+                        </option>
+                        <option class="form-control" value="Regular - $35">
+                          Regular - $35
+                        </option>
+                        <option class="form-control" value="Vip - $58">
+                          Vip - $58
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="user_credit"
+                        name="user_credit"
+                        placeholder="Credit Card No"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        id="user_message"
+                        name="user_message"
+                        placeholder="Message"
+                        rows="7"
+                        required="required"
+                      >
+Do You Have Any Question?</textarea
+                      >
+                    </div>
+                    <div class="col-12">
+                      <button
+                        class="btn anim-btn rounded-pill user-contact"
+                        type="submit"
+                      >
+                        Register Now <span></span><span></span><span></span
+                        ><span></span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal window contact form end-->

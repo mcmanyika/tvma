@@ -18,7 +18,7 @@ SECRET_KEY = '7t!3b3_cih0k#j+uo=-w2rtr1aya9aqqop_bagn0g_iyfngl$7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1', '167.172.243.179']
 else:
@@ -169,8 +169,8 @@ INSTALLED_APPS = [
     'djangocms_video',
 
     'absolute',
-    # 'aldryn_forms',
-    # 'aldryn_forms.contrib.email_notifications',
+    'aldryn_forms',
+    'aldryn_forms.contrib.email_notifications',
     'captcha',
     'emailit',
 
