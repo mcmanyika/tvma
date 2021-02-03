@@ -207,7 +207,8 @@ CMS_TEMPLATES = (
     ('sidebar_right.html', 'Sidebar Right'),
     ('index-barber.html', 'Barber Theme'),
     ('index-event.html', 'Event Theme'),
-    ('b1.html', 'base')
+    ('b1.html', 'base'),
+    ('celebrity.html', 'celebrity')
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
