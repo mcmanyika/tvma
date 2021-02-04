@@ -677,7 +677,7 @@ a {
 ====================================== */
 
 .banner-section {
-  background-image: url("/static/img/with-pst-c.jpg");
+  background-image: url("../img/with-pst-c.jpg");
   background-size: cover;
   height: 100vh;
 }
