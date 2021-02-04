@@ -17,11 +17,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7t!3b3_cih0k#j+uo=-w2rtr1aya9aqqop_bagn0g_iyfngl$7'
 
 
-DEBUG = True
+DEBUG = False
 if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1', '167.172.243.179']
+    ALLOWED_HOSTS = ['127.0.0.1', '206.81.10.55']
 else:
-    ALLOWED_HOSTS = ['167.172.243.179']
+    ALLOWED_HOSTS = ['206.81.10.55']
 
 
 # Application definition
