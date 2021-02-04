@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7t!3b3_cih0k#j+uo=-w2rtr1aya9aqqop_bagn0g_iyfngl$7'
 
 
-DEBUG = False
+DEBUG = True
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1', '206.81.10.55']
 else:

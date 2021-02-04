@@ -21,7 +21,7 @@
       content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq"
     />
     <!-- Page Title -->
-    <title>Celebrity | MegaOne HTML5 Template</title>
+    <title>Heartfelt</title>
     <!-- Favicon -->
     <link href="vendor/img/favicon.ico" rel="icon" />
     <!-- Bundle -->
@@ -29,13 +29,20 @@
     <!-- Plugin Css -->
     <style>
       .banner-section {
-        background-image: url("{% static 'img/with-pst-c.jpg' %}");
+        background-image: url("{% static 'img/with-pst-c.jpg' %}") !important;
       }
       .navbar-brand {
         padding-top: 5rem;
         width: 155px;
       }
     </style>
+    {% if request.toolbar %}
+    <style>
+      .cms-toolbar-expanded .navbar-custom {
+        margin-top: 100px;
+      }
+    </style>
+    {% endif %}
     <link
       rel="stylesheet"
       href="{% static 'vendor/css/jquery.fancybox.min.css' %}"
@@ -56,9 +63,12 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="{% static 'celebrity/css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'celebrity/css/custom.css' %}" />
+    {% render_block "css" %} {{ ALDRNYN_SNAKE.render_head }}
+
   </head>
 
   <body data-offset="90" data-spy="scroll" data-target=".navbar">
+    {% cms_toolbar %}
     <!-- Start Loader -->
     <div class="loader center-block">
       <div class="spinner">
@@ -523,5 +533,6 @@
     <!-- custom script -->
     <script src="{% static 'vendor/js/contact_us.js' %}"></script>
     <script src="{% static 'celebrity/js/script.js' %}"></script>
+    {% render_block "js" %}
   </body>
 </html>
