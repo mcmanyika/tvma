@@ -1,177 +1,176 @@
-{% extends "base.html" %}
-{% load cms_tags i18n menu_tags sekizai_tags static %}
+{% extends "base.html" %} {% load cms_tags i18n menu_tags sekizai_tags static %}
 {% block content %}
-    <!--bottom Arrow start-->
-    <div class="bottom-arr scroll-top-arrow">
-      <i class="las la-angle-up"></i>
-    </div>
-    <!--bottom Arrow end-->
+<!--bottom Arrow start-->
+<div class="bottom-arr scroll-top-arrow">
+  <i class="las la-angle-up"></i>
+</div>
+<!--bottom Arrow end-->
 
-    <!--header sec start-->
-    <header class="head-sec cursor-light" id="head-sec">
-      <!--    <div class="container-fluid">-->
-      <div class="navigation">
-        <div class="slider-icons">
-          <ul class="slider-social social-icons">
-            <li class="animated-wrap">
-              <a class="animated-element" href="javascript:void(0);"
-                ><i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="animated-wrap">
-              <a class="animated-element" href="javascript:void(0);"
-                ><i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li class="animated-wrap">
-              <a class="animated-element" href="javascript:void(0);"
-                ><i class="lab la-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="navigation-toggle">
-          <ul class="slider-social toggle-btn">
-            <li class="animated-wrap">
-              <a class="animated-element" href="javascript:void(0);">
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="broad">
-        <ul class="slider-social close-nav">
-          <li class="animated-wrap">
-            <a class="animated-element" href="javascript:void(0);"
-              ><i class="las la-times"></i
-            ></a>
-          </li>
-        </ul>
-        <nav class="navbar navbar-light">
-          <ul class="navbar-nav">
-            {% show_menu 0 0 100 100 %}
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#head-sec">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#about-sec">About Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#speaker-sec">Organizers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#portfolio-sec">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#pricing-sec">Buy Ticket</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#contact-sec">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!--    </div>-->
-    </header>
-    <div class="aimated-cursor">
-      <div class="cursor">
-        <div class="cursor-loader"></div>
-      </div>
+<!--header sec start-->
+<header class="head-sec cursor-light" id="head-sec">
+  <!--    <div class="container-fluid">-->
+  <div class="navigation">
+    <div class="slider-icons">
+      <ul class="slider-social social-icons">
+        <li class="animated-wrap">
+          <a class="animated-element" href="javascript:void(0);"
+            ><i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="animated-wrap">
+          <a class="animated-element" href="javascript:void(0);"
+            ><i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li class="animated-wrap">
+          <a class="animated-element" href="javascript:void(0);"
+            ><i class="lab la-instagram"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <!--header sec end-->
+    <div class="navigation-toggle">
+      <ul class="slider-social toggle-btn">
+        <li class="animated-wrap">
+          <a class="animated-element" href="javascript:void(0);">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="broad">
+    <ul class="slider-social close-nav">
+      <li class="animated-wrap">
+        <a class="animated-element" href="javascript:void(0);"
+          ><i class="las la-times"></i
+        ></a>
+      </li>
+    </ul>
+    <nav class="navbar navbar-light">
+      <ul class="navbar-nav">
+        {% show_menu 0 0 100 100 %}
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#head-sec">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#about-sec">About Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#speaker-sec">Organizers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#portfolio-sec">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#pricing-sec">Buy Ticket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#contact-sec">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--    </div>-->
+</header>
+<div class="aimated-cursor">
+  <div class="cursor">
+    <div class="cursor-loader"></div>
+  </div>
+</div>
+<!--header sec end-->
 
-    <!--slider sec start-->
-    <div class="slider-sec" id="slider-sec">
-      <!-- START REVOLUTION SLIDER -->
-      <div
-        id="rev_slider_4_1_wrapper"
-        class="rev_slider_wrapper fullscreen-container"
-        data-alias="gravitydesign17 snowaddon1"
-        data-source="gallery"
-        style="background: #1d2931; padding: 0px"
-      >
-        <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
-        <div
-          id="rev_slider_4_1"
-          class="rev_slider fullscreenbanner"
-          style="display: none"
-          data-version="5.4.8.1"
+<!--slider sec start-->
+<div class="slider-sec" id="slider-sec">
+  <!-- START REVOLUTION SLIDER -->
+  <div
+    id="rev_slider_4_1_wrapper"
+    class="rev_slider_wrapper fullscreen-container"
+    data-alias="gravitydesign17 snowaddon1"
+    data-source="gallery"
+    style="background: #1d2931; padding: 0px"
+  >
+    <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+    <div
+      id="rev_slider_4_1"
+      class="rev_slider fullscreenbanner"
+      style="display: none"
+      data-version="5.4.8.1"
+    >
+      <ul>
+        <!-- SLIDE  -->
+        <li
+          data-index="rs-18"
+          data-transition="fade"
+          data-slotamount="default"
+          data-hideafterloop="0"
+          data-hideslideonmobile="off"
+          data-easein="default"
+          data-easeout="default"
+          data-masterspeed="300"
+          data-rotate="0"
+          data-saveperformance="off"
+          data-title="Slide"
+          data-param1=""
+          data-param2=""
+          data-param3=""
+          data-param4=""
+          data-param5=""
+          data-param6=""
+          data-param7=""
+          data-param8=""
+          data-param9=""
+          data-param10=""
+          data-description=""
         >
-          <ul>
-            <!-- SLIDE  -->
-            <li
-              data-index="rs-18"
-              data-transition="fade"
-              data-slotamount="default"
-              data-hideafterloop="0"
-              data-hideslideonmobile="off"
-              data-easein="default"
-              data-easeout="default"
-              data-masterspeed="300"
-              data-rotate="0"
-              data-saveperformance="off"
-              data-title="Slide"
-              data-param1=""
-              data-param2=""
-              data-param3=""
-              data-param4=""
-              data-param5=""
-              data-param6=""
-              data-param7=""
-              data-param8=""
-              data-param9=""
-              data-param10=""
-              data-description=""
-            >
-              <!-- MAIN IMAGE -->
-              <img
-                src="event/img/slider/transparent.png"
-                alt=""
-                data-bgposition="center center"
-                data-bgfit="cover"
-                data-bgrepeat="no-repeat"
-                data-bgparallax="off"
-                class="rev-slidebg"
-                data-no-retina
-              />
-              <!-- LAYERS -->
+          <!-- MAIN IMAGE -->
+          <!-- <img
+            src="event/img/slider/transparent.png"
+            alt=""
+            data-bgposition="center center"
+            data-bgfit="cover"
+            data-bgrepeat="no-repeat"
+            data-bgparallax="off"
+            class="rev-slidebg"
+            data-no-retina
+          /> -->
+          <!-- LAYERS -->
 
-              <!-- LAYER NR. 1 -->
-              <div
-                class="tp-caption tp-resizeme"
-                id="slide-18-layer-1"
-                data-x="['center','center','center','center']"
-                data-hoffset="['0','0','0','0']"
-                data-y="['bottom','bottom','bottom','bottom']"
-                data-voffset="['0','0','0','0']"
-                data-width="full-proportional"
-                data-height="full-proportional"
-                data-whitespace="nowrap"
-                data-type="image"
-                data-basealign="slide"
-                data-responsive_offset="on"
-                data-frames='[{"delay":500,"speed":2000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":310,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                data-textAlign="['inherit','inherit','inherit','inherit']"
-                data-paddingtop="[0,0,0,0]"
-                data-paddingright="[0,0,0,0]"
-                data-paddingbottom="[0,0,0,0]"
-                data-paddingleft="[0,0,0,0]"
-                style="z-index: 5"
-              >
-                <img
-                  src="{% static 'img/welcome_banner.png' %}"
-                  alt=""
-                  data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                  data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                  data-no-retina
-                />
-              </div>
+          <!-- LAYER NR. 1 -->
+          <div
+            class="tp-caption tp-resizeme"
+            id="slide-18-layer-1"
+            data-x="['center','center','center','center']"
+            data-hoffset="['0','0','0','0']"
+            data-y="['bottom','bottom','bottom','bottom']"
+            data-voffset="['0','0','0','0']"
+            data-width="full-proportional"
+            data-height="full-proportional"
+            data-whitespace="nowrap"
+            data-type="image"
+            data-basealign="slide"
+            data-responsive_offset="on"
+            data-frames='[{"delay":500,"speed":2000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":310,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            style="z-index: 5"
+          >
+            <img
+              src="{% static 'img/welcome_banner.png' %}"
+              alt=""
+              data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
+              data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
+              data-no-retina
+            />
+          </div>
 
-              <!-- LAYER NR. 13 -->
-              <div
+          <!-- LAYER NR. 13 -->
+          <!-- <div
                 class="tp-caption tp-resizeme rs-parallaxlevel-4"
                 id="slide-18-layer-14"
                 data-x="['center','center','center','center']"
@@ -206,371 +205,347 @@
                     data-no-retina
                   />
                 </div>
-              </div>
-            </li>
-          </ul>
-          <div
-            class="tp-bannertimer tp-bottom"
-            style="visibility: hidden !important"
-          ></div>
+              </div> -->
+        </li>
+      </ul>
+      <div
+        class="tp-bannertimer tp-bottom"
+        style="visibility: hidden !important"
+      ></div>
+    </div>
+  </div>
+  <!-- END REVOLUTION SLIDER -->
+
+  <a class="navigate-arrow" href="#about-sec">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</div>
+<!--slider sec end-->
+
+<!--About sec start-->
+<div
+  class="about-sec"
+  id="about-sec"
+  style="background: url('event/img/speaker_bg.png')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 text-center text-lg-left">
+        <div class="about-info">
+          <span class="fly-line"></span>
+          <p class="text-des">{% placeholder 'mobile' %}</p>
         </div>
       </div>
-      <!-- END REVOLUTION SLIDER -->
 
-      <a class="navigate-arrow" href="#about-sec">
-        <i class="fas fa-chevron-down"></i>
-      </a>
+      <div class="col-12 col-lg-6 order-1 order-lg-2 text-center text-lg-left">
+        <div class="about-info">
+          <span class="fly-line"></span>
+          <p class="text-des">{% placeholder 'about' %}</p>
+        </div>
+      </div>
     </div>
-    <!--slider sec end-->
+  </div>
+</div>
+<!--About sec end-->
 
-    <!--About sec start-->
-    <div
-      class="about-sec"
-      id="about-sec"
-      style="background: url('event/img/speaker_bg.png')"
-    >
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 col-lg-6 order-1 order-lg-2 text-center text-lg-left"
+<!--Counters sec Start-->
+<div
+  class="count-sec"
+  id="count-sec"
+  style="background: url({% static 'img/blank.png' %})"
+>
+  <div class="count-overlay"></div>
+  <div class="container">
+    <div class="row text-center count-content">
+      <div class="col-12 col-lg-4 count-li">
+        <h6 class="num"><span class="counter" data-count="68">68</span>+</h6>
+        <h4 class="heading">Locations</h4>
+        <p class="text-des"></p>
+        <span class="fly-line"></span>
+      </div>
+      <div class="col-12 col-lg-4 count-li">
+        <h6 class="num"><span class="counter" data-count="8">8</span>+</h6>
+        <h4 class="heading">International Zones</h4>
+        <span class="fly-line"></span>
+      </div>
+      <div class="col-12 col-lg-4 count-li">
+        <h6 class="num"><span class="counter" data-count="15">15k</span>+</h6>
+        <h4 class="heading">Membership</h4>
+        <span class="fly-line"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Counters sec end-->
+
+<!--Speaker sec start-->
+<div class="speaker-sec" id="speaker-sec">
+  <div class="container">
+    <div class="row text-center speakers-detail">
+      <div class="col-12">
+        <h4 class="large-heading">Sunday Notes</h4>
+        <span class="fly-line"></span>
+      </div>
+    </div>
+    <div class="speaker owl-carousel owl-theme text-center">
+      <div class="item speaker-info">
+        <div class="">
+          {% placeholder 'quote1' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item speaker-info">
+        <div class="">
+          {% placeholder 'quote2' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item speaker-info">
+        <div class="">
+          {% placeholder 'quote4' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item speaker-info">
+        <div class="">
+          {% placeholder 'quote5' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Speaker sec end-->
+
+<!--Blog Area-->
+<div
+  class="count-sec"
+  id="blog-area"
+  style="background: url({% static 'img/background.png' %})"
+>
+  <div class="count-overlay"></div>
+  <div class="container">
+    <div class="col-lg-12">{% placeholder 'blog' %}</div>
+  </div>
+</div>
+<!--Blog Area-->
+
+<!--Speaker sec start-->
+<div class="speaker-sec" id="speaker-sec">
+  <div class="container">
+    <div class="row text-center speakers-detail">
+      <div class="col-12">
+        <h4 class="large-heading">Daily Quotes</h4>
+        <span class="fly-line"></span>
+      </div>
+    </div>
+    <div class="speaker owl-carousel owl-theme text-center">
+      <div class="item speaker-info">
+        <div class="image-holder">
+          {% placeholder 'quote1' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item speaker-info">
+        <div class="image-holder">
+          {% placeholder 'quote2' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item speaker-info">
+        <div class="image-holder">
+          {% placeholder 'quote4' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item speaker-info">
+        <div class="image-holder">
+          {% placeholder 'quote5' %}
+
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="speaker-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Speaker sec end-->
+
+<!--Pricing sec end-->
+
+<!--timeline sec start-->
+<div
+  class="timeline-sec"
+  id="timeline-sec"
+  style="background: url({% static 'img/prayer.png' %})"
+>
+  <div class="timeline-overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center timeline-heading">
+        <h4 class="large-heading">Instructions of the Month</h4>
+        <span class="fly-line"></span>
+      </div>
+      <div class="col-12">
+        <div class="row timeline-year">
+          <div class="col-12">
+            <div class="t-year">
+              <h4 class="heading">{% placeholder 'month' %}</h4>
+            </div>
+          </div>
+        </div>
+        <ul class="timeline">
+          <li class="timeline-block simple-timeline wow fadeInLeft">
+            <div class="event-details">
+              <p class="text-des">{% placeholder 'event1' %}</p>
+            </div>
+          </li>
+          <li
+            class="timeline-block inverse-timeline wow fadeInRight"
+            data-wow-delay=".2s"
           >
-            <div class="about-info">
-              <span class="fly-line"></span>
-              <p class="text-des">{% placeholder 'mobile' %}</p>
+            <div class="event-details">
+              <p class="text-des">{% placeholder 'event2' %}</p>
             </div>
-          </div>
-
-          <div
-            class="col-12 col-lg-6 order-1 order-lg-2 text-center text-lg-left"
+          </li>
+          <li
+            class="timeline-block inverse-timeline wow fadeInRight"
+            data-wow-delay=".6s"
           >
-            <div class="about-info">
-              <span class="fly-line"></span>
-              <p class="text-des">{% placeholder 'about' %}</p>
+            <div class="event-details">
+              <p class="text-des">{% placeholder 'event3' %}</p>
             </div>
-          </div>
-        </div>
+          </li>
+          <li
+            class="timeline-block simple-timeline wow fadeInLeft"
+            data-wow-delay=".4s"
+          >
+            <div class="event-details">
+              <p class="text-des">{% placeholder 'event4' %}</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-    <!--About sec end-->
-
-    <!--Counters sec Start-->
-    <div
-      class="count-sec"
-      id="count-sec"
-      style="background: url({% static 'img/blank.png' %})"
-    >
-      <div class="count-overlay"></div>
-      <div class="container">
-        <div class="row text-center count-content">
-          <div class="col-12 col-lg-4 count-li">
-            <h6 class="num">
-              <span class="counter" data-count="68">68</span>+
-            </h6>
-            <h4 class="heading">Locations</h4>
-            <p class="text-des"></p>
-            <span class="fly-line"></span>
-          </div>
-          <div class="col-12 col-lg-4 count-li">
-            <h6 class="num"><span class="counter" data-count="8">8</span>+</h6>
-            <h4 class="heading">International Zones</h4>
-            <span class="fly-line"></span>
-          </div>
-          <div class="col-12 col-lg-4 count-li">
-            <h6 class="num">
-              <span class="counter" data-count="15">15k</span>+
-            </h6>
-            <h4 class="heading">Membership</h4>
-            <span class="fly-line"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Counters sec end-->
-
-    <!--Speaker sec start-->
-    <div class="speaker-sec" id="speaker-sec">
-      <div class="container">
-        <div class="row text-center speakers-detail">
-          <div class="col-12">
-            <h4 class="large-heading">Sunday Notes</h4>
-            <span class="fly-line"></span>
-          </div>
-        </div>
-        <div class="speaker owl-carousel owl-theme text-center">
-          <div class="item speaker-info">
-            <div class="">
-              {% placeholder 'quote1' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item speaker-info">
-            <div class="">
-              {% placeholder 'quote2' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item speaker-info">
-            <div class="">
-              {% placeholder 'quote4' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item speaker-info">
-            <div class="">
-              {% placeholder 'quote5' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Speaker sec end-->
-
-    <!--Blog Area-->
-    <div
-      class="count-sec"
-      id="blog-area"
-      style="background: url({% static 'img/background.png' %})"
-    >
-      <div class="count-overlay"></div>
-      <div class="container">
-        <div class="col-lg-12">{% placeholder 'blog' %}</div>
-      </div>
-    </div>
-    <!--Blog Area-->
-
-    <!--Speaker sec start-->
-    <div class="speaker-sec" id="speaker-sec">
-      <div class="container">
-        <div class="row text-center speakers-detail">
-          <div class="col-12">
-            <h4 class="large-heading">Daily Quotes</h4>
-            <span class="fly-line"></span>
-          </div>
-        </div>
-        <div class="speaker owl-carousel owl-theme text-center">
-          <div class="item speaker-info">
-            <div class="image-holder">
-              {% placeholder 'quote1' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item speaker-info">
-            <div class="image-holder">
-              {% placeholder 'quote2' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item speaker-info">
-            <div class="image-holder">
-              {% placeholder 'quote4' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item speaker-info">
-            <div class="image-holder">
-              {% placeholder 'quote5' %}
-
-              <div
-                class="overlay d-flex justify-content-center align-items-center"
-              >
-                <div class="speaker-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Speaker sec end-->
-
-    <!--Pricing sec end-->
-
-    <!--timeline sec start-->
-    <div
-      class="timeline-sec"
-      id="timeline-sec"
-      style="background: url({% static 'img/prayer.png' %})"
-    >
-      <div class="timeline-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center timeline-heading">
-            <h4 class="large-heading">Instructions of the Month</h4>
-            <span class="fly-line"></span>
-          </div>
-          <div class="col-12">
-            <div class="row timeline-year">
-              <div class="col-12">
-                <div class="t-year">
-                  <h4 class="heading">{% placeholder 'month' %}</h4>
-                </div>
-              </div>
-            </div>
-            <ul class="timeline">
-              <li class="timeline-block simple-timeline wow fadeInLeft">
-                <div class="event-details">
-                  <p class="text-des">{% placeholder 'event1' %}</p>
-                </div>
-              </li>
-              <li
-                class="timeline-block inverse-timeline wow fadeInRight"
-                data-wow-delay=".2s"
-              >
-                <div class="event-details">
-                  <p class="text-des">{% placeholder 'event2' %}</p>
-                </div>
-              </li>
-              <li
-                class="timeline-block inverse-timeline wow fadeInRight"
-                data-wow-delay=".6s"
-              >
-                <div class="event-details">
-                  <p class="text-des">{% placeholder 'event3' %}</p>
-                </div>
-              </li>
-              <li
-                class="timeline-block simple-timeline wow fadeInLeft"
-                data-wow-delay=".4s"
-              >
-                <div class="event-details">
-                  <p class="text-des">{% placeholder 'event4' %}</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--timeline sec end-->
+  </div>
+</div>
+<!--timeline sec end-->
 {% endblock %}
